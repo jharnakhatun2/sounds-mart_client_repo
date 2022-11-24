@@ -36,3 +36,9 @@
     transform: rotate(360deg);
   }
 }
+/* banner background */
+.bannerbg {
+  background-image:  url("https://i.ibb.co/BPTxgmL/hero.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
