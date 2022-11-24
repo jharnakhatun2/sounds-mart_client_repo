@@ -42,3 +42,16 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+.category-bg{
+  background-image:  url("https://i.ibb.co/Xb9qdgL/category.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: auto;
+
+}
+.newsletter-bg{
+  background-image:  url("https://i.ibb.co/N1rpdCp/newsletter.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: auto;
+}
