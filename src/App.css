@@ -55,3 +55,9 @@
   background-attachment: fixed;
   background-size: auto;
 }
+.product_image{
+  background-image:  url("https://i.ibb.co/sVz4NGw/bhjn.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: auto;
+}
