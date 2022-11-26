@@ -58,7 +58,7 @@ const BookingModal = ({ bookingModal,setBookingModal }) => {
               placeholder="name"
               defaultValue={user?.displayName}
               className="input input-bordered w-full my-1  "
-              disabled
+              
             />
             
             <input
