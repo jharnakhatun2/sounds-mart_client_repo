@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import toast from "react-hot-toast";
 import { AuthContext } from "../../Authentication/AuthProvider/AuthProvider";
 
 const BookingModal = ({ bookingModal,setBookingModal }) => {
@@ -23,18 +24,25 @@ const BookingModal = ({ bookingModal,setBookingModal }) => {
           location    
         }
 
-        // fetch(`http://localhost:5000/bookings`,{
-        //     method : 'POST',
-        //     headers: {
-        //         'content-type': 'application/json'
-        //     },
-        //     body: JSON.stringify(booking)
-        // })
-        // .then(res => res.json())
-        // .then(data => console.log(data));
+        fetch(`http://localhost:5000/bookings`,{
+            method : 'POST',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(booking)
+        })
+        .then(res => res.json())
+        .then(data => {
+          if(data.acknowledged){
+            setBookingModal(null); 
+            toast.success('Booking confirmed');
+          }else{
+        toast.error(data.message);
+      }
+        });
         
-        console.log(booking);
-        setBookingModal(null); 
+       
+        
     }
     
   return (
@@ -50,7 +58,7 @@ const BookingModal = ({ bookingModal,setBookingModal }) => {
               placeholder="name"
               defaultValue={user?.displayName}
               className="input input-bordered w-full my-1  "
-              
+              disabled
             />
             
             <input
@@ -59,7 +67,7 @@ const BookingModal = ({ bookingModal,setBookingModal }) => {
               placeholder="email"
               defaultValue={user?.email}
               className="input input-bordered w-full my-1  "
-              readOnly
+              disabled
             />
             <input
               type="text"
@@ -67,7 +75,7 @@ const BookingModal = ({ bookingModal,setBookingModal }) => {
               placeholder="Product Title"
               defaultValue={title}
               className="input input-bordered w-full my-1  "
-              readOnly
+              disabled
             />
 
             <input
@@ -76,7 +84,7 @@ const BookingModal = ({ bookingModal,setBookingModal }) => {
               placeholder="price"
               defaultValue={resale_price}
               className="input input-bordered w-full my-1  "
-              readOnly
+              disabled
             />
 
             <input

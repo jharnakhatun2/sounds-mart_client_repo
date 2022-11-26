@@ -7,11 +7,7 @@ import { GoogleAuthProvider } from "firebase/auth";
 import useToken from "../../Hooks/useToken";
 
 const Signup = () => {
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm();
+  const {register,handleSubmit,formState: { errors }} = useForm();
   // signup error
   const [signupError, setSignUpError] = useState();
   const { createUser, updateUser, providerLogin } = useContext(AuthContext);
@@ -31,16 +27,18 @@ const Signup = () => {
     createUser(data.email, data.password)
       .then((result) => {
         const user = result.user;
-        console.log(user);
+        const users = result.users;
+        console.log(user,users);
         // toast for sign
         toast("User created successfully");
         // profile Update after signup
         const userInfo = {
           displayName: user.name,
+          userRole : user.users,
         };
         updateUser(userInfo)
           .then(() => {
-            saveUser(data.name, data.email);
+            saveUser(data.name, data.email, data.users);
           })
           .catch((err) => console.log(err));
       })
@@ -51,8 +49,8 @@ const Signup = () => {
       });
   };
 
-  const saveUser = (name, email) => {
-    const user = { name, email };
+  const saveUser = (name, email, users) => {
+    const user = { name, email , users};
     fetch(`http://localhost:5000/users`, {
       method: "POST",
       headers: {

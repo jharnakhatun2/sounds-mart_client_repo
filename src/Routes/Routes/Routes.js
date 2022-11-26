@@ -8,6 +8,9 @@ import Category from '../../Pages/Products/Category';
 import Products from '../../Pages/Products/Products';
 import ProductModal from '../../Pages/Products/ProductModal';
 import PrivateRoute from '../PrivateRoute';
+import DashboardLayout from '../DashboardLayout';
+import Dashboard from '../../Dashboard/Dashboard';
+import MyOrders from '../../Dashboard/Buyers/MyOrders';
 
 const router = createBrowserRouter([
     {
@@ -48,6 +51,16 @@ const router = createBrowserRouter([
                 path: '*',
                 element: <Error></Error>
               }
+        ]
+    },
+    {
+        path:'/dashboard',
+        element: <PrivateRoute><DashboardLayout></DashboardLayout></PrivateRoute>,
+        children: [
+            {
+                path:'/dashboard',
+                element: <MyOrders></MyOrders>
+            }
         ]
     }
 ])
