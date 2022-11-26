@@ -1,9 +1,8 @@
 import React from 'react';
 import { PhotoProvider, PhotoView } from 'react-photo-view';
-import { Link } from 'react-router-dom';
-import PrimaryButton from '../../Component/Button/PrimaryButton';
 
-const Product = ({pro,setCategory}) => {
+
+const Product = ({pro,setCategory,setBookingModal}) => {
     return (
         <div key={pro.id}>
               <div className="card card-compact w-96 m-7 p-2 bg-base-100 shadow-xl">
@@ -33,9 +32,7 @@ const Product = ({pro,setCategory}) => {
                   
                   <div className="card-actions justify-between items-center">
                   <h2 className="">Seller : <span className="text-accent text-lg font-bold">{pro.seller_name}</span></h2>
-                    <Link to={`/products/:id`}>
-                      <PrimaryButton>BOOK NOW</PrimaryButton>
-                    </Link>
+                  <label onClick={() => setBookingModal(pro)} htmlFor="bookingModal" className="btn btn-primary bg-gradient-to-r from-primary to-neutral text-black border-0">BOOK NOW</label>
                   </div>
                 </div>
               </div>

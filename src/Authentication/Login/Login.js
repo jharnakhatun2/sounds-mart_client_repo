@@ -74,7 +74,7 @@ const Login = () => {
             {loginError && <p className="text-error">{loginError}</p>}
           </div>
         </form>
-        <small >New to Sounds Mart ? <Link  className="text-secondary" to="/signup">Create new account</Link></small>
+        <small >New to Sounds Mart ? <Link  className="text-sky-900 font-bold" to="/signup">Create new account</Link></small>
         <div className="divider">OR</div>
         <button onClick={handleGoogleSignIn} className="btn btn-outline w-full">CONTINUE WITH GOOGLE</button>
       </div>
