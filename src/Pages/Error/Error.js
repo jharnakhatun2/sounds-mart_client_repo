@@ -3,8 +3,9 @@ import { Link } from 'react-router-dom';
 
 const Error = () => {
     return (
-        <div className='text-center pt-52 bg-slate-200 h-screen'>
-            <h3><span className='text-orange-600 text-5xl'>404..</span> This page is not found!</h3>
+        <div className='text-center pt-20 bg-slate-100 h-screen'>
+            <img className='w-1/4 mx-auto' src="https://i.ibb.co/MBkSKzW/errorpage.png" alt="Error" />
+            <h3>This page is not found!</h3>
             <Link className="btn my-5" to='/'>GO TO HOME</Link>
         </div>
     );
