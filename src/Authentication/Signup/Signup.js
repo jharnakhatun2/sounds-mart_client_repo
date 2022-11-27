@@ -4,7 +4,7 @@ import toast from "react-hot-toast";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Authentication/AuthProvider/AuthProvider";
 import { GoogleAuthProvider } from "firebase/auth";
-import useToken from "../../Hooks/useToken";
+import useToken from "../../hooks/useToken";
 
 const Signup = () => {
   const {register,handleSubmit,formState: { errors }} = useForm();
@@ -102,7 +102,7 @@ const Signup = () => {
           <select name="users" {...register("users",{
                 required: "User is required",
               })} className="select select-bordered w-full">
-            <option value="buyer" selected>Buyer Account</option>
+            <option value="buyer" >Buyer Account</option>
             <option value="seller">Seller Account</option>
           </select>
           {errors.users && (

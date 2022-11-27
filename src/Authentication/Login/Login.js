@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Authentication/AuthProvider/AuthProvider";
 import { GoogleAuthProvider } from 'firebase/auth';
-import useToken from "../../Hooks/useToken";
+import useToken from "../../hooks/useToken";
 
 const Login = () => {
   const { register, handleSubmit,formState: { errors } } = useForm();
@@ -19,9 +19,7 @@ const Login = () => {
   if(token){
     navigate(from, {replace: true});//for private route
   }
-  console.log(token);
-
-
+ 
   const handleLogin = (data)=>{
     console.log(data);
     // reset when submit
