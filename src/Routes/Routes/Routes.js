@@ -14,6 +14,8 @@ import AdminRoutes from '../AdminRoutes';
 import AllUser from '../../Dashboard/Admin/AllUser';
 import AddProduct from '../../Dashboard/Seller/AddProduct';
 import MyProducts from '../../Dashboard/Seller/MyProducts';
+import Blog from '../../Pages/Blog/Blog';
+import Blogs from '../../Pages/Blog/Blogs';
 
 
 const router = createBrowserRouter([
@@ -52,6 +54,18 @@ const router = createBrowserRouter([
                 loader: ({params})=>fetch(`http://localhost:5000/products/${params.id}`)
             },
             {
+                path: "/blogs",
+                element: <Blogs />
+                
+            },
+              {
+                path: "/blogs/:id",
+                element: <Blog />,
+                loader: async ({params})=>{
+                  return fetch(`http://localhost:5000/blogs/${params.id}`)
+                }
+            },
+              {
                 path: '*',
                 element: <Error></Error>
               }
