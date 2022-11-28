@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import PrimaryButton from "../../Component/Button/PrimaryButton";
 
 
@@ -12,7 +13,7 @@ const Banner = () => {
           <p className="py-6 text-base-300">
           Enjoy absolute comfort and luxury. Sleek, lightweight aluminum, Scottish Muirhead leather, and matte dark satin ear-cup rings ensure that these EARPHONES feel as sumptuous as they sound
           </p>
-          <PrimaryButton>Get Started</PrimaryButton>
+          <Link to='/login'></Link><PrimaryButton>Get Started</PrimaryButton>
         </div>
       </div>
     </div>

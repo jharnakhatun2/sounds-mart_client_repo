@@ -5,6 +5,7 @@ import Newsletter from '../../Newsletter/Newsletter';
 import Category from '../../Products/Category';
 
 const Home = () => {
+    
     return (
         <div>
             <Banner></Banner>

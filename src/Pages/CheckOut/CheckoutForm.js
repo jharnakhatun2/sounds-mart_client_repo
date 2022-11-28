@@ -74,7 +74,7 @@ const CheckoutForm = ({booking}) => {
           return;
         }
         if(paymentIntent.status === "succeeded"){
-          console.log('card info' , card);
+          
           // store payment info in the database
           const payment = {
               price,

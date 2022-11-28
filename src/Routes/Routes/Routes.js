@@ -18,6 +18,7 @@ import Blog from '../../Pages/Blog/Blog';
 import Blogs from '../../Pages/Blog/Blogs';
 import Checkout from '../../Pages/CheckOut/Checkout';
 import DisplayError from '../../Shared/DisplayError/DisplayError';
+import Advertise from '../../Pages/Advertise/Advertise';
 
 
 const router = createBrowserRouter([
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
             {
                 path: '/',
                 element: <Home></Home>
+            },
+            {
+                path: '/advertise',
+                element: <Advertise></Advertise>
             },
             {
                 path: '/signup',

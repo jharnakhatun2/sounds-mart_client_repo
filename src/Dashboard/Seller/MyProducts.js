@@ -1,6 +1,7 @@
 import { useQuery } from '@tanstack/react-query';
 import React, { useState } from 'react';
 import toast from 'react-hot-toast';
+import { useNavigate } from 'react-router-dom';
 import ConfirmationModal from '../../Shared/ConformationModal/ConfirmationModal';
 import Loading from '../../Shared/Loading/Loading';
 
@@ -22,7 +23,9 @@ const MyProducts = () => {
         const data = await res.json();
         console.log(data);
         return data;
-      } catch (error) {}
+      } catch (error) {
+        console.log(error);
+      }
     },
   });
 
@@ -41,6 +44,7 @@ const MyProducts = () => {
       }
   })
   }
+
 
   if (isLoading) {
     return <Loading></Loading>;
@@ -75,8 +79,19 @@ const MyProducts = () => {
                 </td>
                 <td>{product.product_name}</td>
                 <td>{product.price}</td>
-                <td>product status available / sold</td>
-                <td><label className="btn btn-xs btn-secondary">Advertise</label></td>
+                <td>
+                  {
+                    product.price && !product.sold && <button className="btn btn-xs btn-primary">Available</button>
+                  }
+                  {
+                    product.price && product.sold && <span className="btn btn-xs btn-success">Sold</span>
+                  }
+                </td>
+                <td>
+                <label 
+                className="btn btn-xs btn-secondary">
+                Advertise</label>
+                </td>
                 <td>
                   <label onClick ={()=>setDeletingProduct(product)}
                     htmlFor="confirmation-modal"
