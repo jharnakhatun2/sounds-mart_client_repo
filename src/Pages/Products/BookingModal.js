@@ -27,7 +27,7 @@ const BookingModal = ({ bookingModal,setBookingModal }) => {
           location    
         }
 
-        fetch(`http://localhost:5000/bookings`,{
+        fetch(`https://sounds-mart-server-jharna203.vercel.app/bookings`,{
             method : 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -38,7 +38,7 @@ const BookingModal = ({ bookingModal,setBookingModal }) => {
         .then(data => {
           if(data.acknowledged){
             setBookingModal(null); 
-            toast.success('Booking confirmed');
+            toast.success('The Item is Booked');
             navigate('/dashboard');
           }else{
         toast.error(data.message);

@@ -60,12 +60,12 @@ const router = createBrowserRouter([
             {
                 path: '/products/:id',
                 element: <PrivateRoute><Products></Products></PrivateRoute>,
-                loader: ({params})=>fetch(`http://localhost:5000/products/${params.id}`)
+                loader: ({params})=>fetch(`https://sounds-mart-server-jharna203.vercel.app/products/${params.id}`)
             },
             {
                 path: '/modal/:id',
                 element: <ProductModal></ProductModal>,
-                loader: ({params})=>fetch(`http://localhost:5000/products/${params.id}`)
+                loader: ({params})=>fetch(`https://sounds-mart-server-jharna203.vercel.app/products/${params.id}`)
             },
             {
                 path: "/blogs",
@@ -76,7 +76,7 @@ const router = createBrowserRouter([
                 path: "/blogs/:id",
                 element: <Blog />,
                 loader: async ({params})=>{
-                  return fetch(`http://localhost:5000/blogs/${params.id}`)
+                  return fetch(`https://sounds-mart-server-jharna203.vercel.app/blogs/${params.id}`)
                 }
             },
               {
@@ -125,7 +125,7 @@ const router = createBrowserRouter([
             {
                 path: '/dashboard/checkout/:id',
                 element: <Checkout></Checkout>,
-                loader: ({params})=>fetch(`http://localhost:5000/bookings/${params.id}`)
+                loader: ({params})=>fetch(`https://sounds-mart-server-jharna203.vercel.app/bookings/${params.id}`)
               }
             
         ]

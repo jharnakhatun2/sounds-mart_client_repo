@@ -9,7 +9,7 @@ const MyOrders = () => {
     const {data: bookings = []} = useQuery({
         queryKey: ['bookings', user?.email],
         queryFn:async () =>{
-            const res = await fetch(`http://localhost:5000/bookings?email=${user?.email}`,{
+            const res = await fetch(`https://sounds-mart-server-jharna203.vercel.app/bookings?email=${user?.email}`,{
                 headers: {
                     authorization: `bearer ${localStorage.getItem('accessToken')}`
                 }

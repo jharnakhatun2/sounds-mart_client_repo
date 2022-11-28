@@ -51,7 +51,7 @@ const Signup = () => {
 
   const saveUser = (name, email, users) => {
     const user = { name, email , users};
-    fetch(`http://localhost:5000/users`, {
+    fetch(`https://sounds-mart-server-jharna203.vercel.app/users`, {
       method: "POST",
       headers: {
         "content-type": "application/json",

@@ -15,7 +15,7 @@ const MyProducts = () => {
     queryKey: ["products"],
     queryFn: async () => {
       try {
-        const res = await fetch(`http://localhost:5000/sellerproduct`, {
+        const res = await fetch(`https://sounds-mart-server-jharna203.vercel.app/sellerproduct`, {
           headers: {
             authorization: `bearer ${localStorage.getItem("accessToken")}`,
           },
@@ -30,7 +30,7 @@ const MyProducts = () => {
   });
 
   const handleDeleteProduct = product =>{
-    fetch(`http://localhost:5000/sellerproduct/${product._id}`,{
+    fetch(`https://sounds-mart-server-jharna203.vercel.app/sellerproduct/${product._id}`,{
       method: 'DELETE',
       headers: {
           authorization: `bearer ${localStorage.getItem('accessToken')}`

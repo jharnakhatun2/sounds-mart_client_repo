@@ -7,7 +7,7 @@ SOUND'S MART is Full Stack based website with user role based. This site's dashb
 To make this project I faced some challenges to myself and enjoyed it more. Challenges always attracted to Me!  
 
 ## 🔗 Live Site Link: 
-Preview Live : https://tour-expart.web.app/
+Preview Live : https://sounds-mart.web.app/
 
 
 ## What I have been completed -

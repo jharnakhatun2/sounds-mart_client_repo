@@ -8,7 +8,7 @@ const Advertise = () => {
     queryKey: ["advproducts"],
     queryFn: async () => {
       try {
-        const res = await fetch(`http://localhost:5000/sellerproduct`, {
+        const res = await fetch(`https://sounds-mart-server-jharna203.vercel.app/sellerproduct`, {
           headers: {
             authorization: `bearer ${localStorage.getItem("accessToken")}`,
           },

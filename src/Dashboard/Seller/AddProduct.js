@@ -34,7 +34,7 @@ const AddProduct = () => {
         }
 
         // save product info to database
-        fetch(`http://localhost:5000/sellerproduct`,{
+        fetch(`https://sounds-mart-server-jharna203.vercel.app/sellerproduct`,{
           method: 'POST',
           headers: {
             'content-type': 'application/json',

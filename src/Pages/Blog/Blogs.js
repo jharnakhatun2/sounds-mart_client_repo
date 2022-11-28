@@ -8,7 +8,7 @@ const Blogs = () => {
     const {data: blogs = []} = useQuery({
         queryKey: ['blogs'],
         queryFn:async () =>{
-            const res = await fetch(`http://localhost:5000/blogs`,{
+            const res = await fetch(`https://sounds-mart-server-jharna203.vercel.app/blogs`,{
                 headers: {
                     authorization: `bearer ${localStorage.getItem('accessToken')}`
                 }
