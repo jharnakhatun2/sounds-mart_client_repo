@@ -19,6 +19,10 @@ import Blogs from '../../Pages/Blog/Blogs';
 import Checkout from '../../Pages/CheckOut/Checkout';
 import DisplayError from '../../Shared/DisplayError/DisplayError';
 import Advertise from '../../Pages/Advertise/Advertise';
+import MyBuyers from '../../Dashboard/Seller/MyBuyers';
+import ReportedItems from '../../Dashboard/Admin/ReportedItems';
+import SellerRoutes from '../SellerRoutes';
+import BuyerRoutes from '../BuyerRoutes';
 
 
 const router = createBrowserRouter([
@@ -86,7 +90,7 @@ const router = createBrowserRouter([
         children: [
             {
                 path:'/dashboard',
-                element: <MyOrders></MyOrders>
+                element: <BuyerRoutes><MyOrders></MyOrders></BuyerRoutes>
             },
             {
                 path:'/dashboard/alluser',
@@ -94,11 +98,19 @@ const router = createBrowserRouter([
             },
             {
                 path:'/dashboard/addproduct',
-                element: <AddProduct></AddProduct>
+                element: <SellerRoutes><AddProduct></AddProduct></SellerRoutes>
             },
             {
                 path:'/dashboard/myproducts',
-                element: <MyProducts></MyProducts>
+                element: <SellerRoutes><MyProducts></MyProducts></SellerRoutes>
+            },
+            {
+                path:'/dashboard/mybuyers',
+                element: <SellerRoutes><MyBuyers></MyBuyers></SellerRoutes>
+            },
+            {
+                path:'/dashboard/reporteditems',
+                element: <ReportedItems></ReportedItems>
             },
             {
                 path: '/dashboard/checkout/:id',

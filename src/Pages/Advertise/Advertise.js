@@ -31,7 +31,7 @@ const Advertise = () => {
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
     {
       advproducts.map(advProduct =>{
-        const {_id,condition,description,image,location,mobile_no,price,product_name,use_year} = advProduct;
+        const {_id,condition,image,location,price,product_name,use_year} = advProduct;
         console.log(advProduct);
         return <div key={_id}>
               <div className="card card-compact w-96 m-7 p-2 bg-base-100 shadow-xl">
