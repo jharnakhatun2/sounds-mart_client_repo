@@ -92,7 +92,7 @@ const router = createBrowserRouter([
         children: [
             {
                 path:'/dashboard',
-                element: <BuyerRoutes><MyOrders></MyOrders></BuyerRoutes>
+                element: <MyOrders></MyOrders>
             },
             {
                 path:'/dashboard/alluser',
@@ -108,19 +108,19 @@ const router = createBrowserRouter([
             },
             {
                 path:'/dashboard/addproduct',
-                element: <SellerRoutes><AddProduct></AddProduct></SellerRoutes>
+                element: <AdminRoutes><AddProduct></AddProduct></AdminRoutes>
             },
             {
                 path:'/dashboard/myproducts',
-                element: <SellerRoutes><MyProducts></MyProducts></SellerRoutes>
+                element: <AdminRoutes><MyProducts></MyProducts></AdminRoutes>
             },
             {
                 path:'/dashboard/mybuyers',
-                element: <SellerRoutes><MyBuyers></MyBuyers></SellerRoutes>
-            },
+                element: <AdminRoutes><MyBuyers></MyBuyers></AdminRoutes>
+            }, 
             {
                 path:'/dashboard/reporteditems',
-                element: <ReportedItems></ReportedItems>
+                element: <AdminRoutes><ReportedItems></ReportedItems></AdminRoutes>
             },
             {
                 path: '/dashboard/checkout/:id',
