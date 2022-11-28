@@ -1,10 +1,12 @@
 import React, { useContext } from "react";
 import toast from "react-hot-toast";
+import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Authentication/AuthProvider/AuthProvider";
 
 const BookingModal = ({ bookingModal,setBookingModal }) => {
-    const {title, resale_price} = bookingModal;
+    const {image,title, resale_price} = bookingModal;
     const {user} = useContext(AuthContext);
+    const navigate = useNavigate();
 
     const handleSubmit = event =>{
         event.preventDefault();
@@ -18,7 +20,8 @@ const BookingModal = ({ bookingModal,setBookingModal }) => {
         const booking ={
           name,
           email,
-          product_name : title, 
+          product_name : title,
+          image, 
           price : resale_price,
           phone,
           location    
@@ -36,6 +39,7 @@ const BookingModal = ({ bookingModal,setBookingModal }) => {
           if(data.acknowledged){
             setBookingModal(null); 
             toast.success('Booking confirmed');
+            navigate('/dashboard');
           }else{
         toast.error(data.message);
       }
@@ -74,6 +78,15 @@ const BookingModal = ({ bookingModal,setBookingModal }) => {
               name="title"
               placeholder="Product Title"
               defaultValue={title}
+              className="input input-bordered w-full my-1  "
+              disabled
+            />
+
+            <input
+              type="text"
+              name="image"
+              placeholder="Product Title"
+              defaultValue={image}
               className="input input-bordered w-full my-1  "
               disabled
             />

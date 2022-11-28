@@ -31,7 +31,7 @@ const Product = ({pro,setCategory,setBookingModal}) => {
                   </div>
                   
                   <div className="card-actions justify-between items-center">
-                  <h2 className="">Seller : <span className="text-accent text-lg font-bold">{pro.seller_name}</span></h2>
+                  <h2><div className="badge badge-info badge-xs"></div> Seller : <span className="text-accent text-lg font-bold">{pro.seller_name}</span></h2>
                   <label onClick={() => setBookingModal(pro)} htmlFor="bookingModal" className="btn btn-primary bg-gradient-to-r from-primary to-neutral text-black border-0">BOOK NOW</label>
                   </div>
                 </div>

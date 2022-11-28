@@ -16,12 +16,15 @@ import AddProduct from '../../Dashboard/Seller/AddProduct';
 import MyProducts from '../../Dashboard/Seller/MyProducts';
 import Blog from '../../Pages/Blog/Blog';
 import Blogs from '../../Pages/Blog/Blogs';
+import Checkout from '../../Pages/CheckOut/Checkout';
+import DisplayError from '../../Shared/DisplayError/DisplayError';
 
 
 const router = createBrowserRouter([
     {
         path: '/',
         element: <Main></Main>,
+        errorElement: <DisplayError></DisplayError>,
         children: [
             {
                 path: '/',
@@ -74,6 +77,7 @@ const router = createBrowserRouter([
     {
         path:'/dashboard',
         element: <PrivateRoute><DashboardLayout></DashboardLayout></PrivateRoute>,
+        errorElement: <DisplayError></DisplayError>,
         children: [
             {
                 path:'/dashboard',
@@ -90,7 +94,12 @@ const router = createBrowserRouter([
             {
                 path:'/dashboard/myproducts',
                 element: <MyProducts></MyProducts>
-            }
+            },
+            {
+                path: '/dashboard/checkout/:id',
+                element: <Checkout></Checkout>,
+                loader: ({params})=>fetch(`http://localhost:5000/bookings/${params.id}`)
+              }
             
         ]
     }
