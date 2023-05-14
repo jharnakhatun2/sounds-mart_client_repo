@@ -2,9 +2,9 @@ import React, { useContext } from "react";
 import { Link, Outlet } from "react-router-dom";
 import { AuthContext } from "../Authentication/AuthProvider/AuthProvider";
 import Navbar from "../Shared/Navbar/Navbar";
-import useAdmin from "../hooks/useAdmin";
-import useSeller from "../hooks/useSeller";
-import useBuyer from "../hooks/useBuyer";
+import useAdmin from "../Hooks/useAdmin";
+import useSeller from "../Hooks/useSeller";
+import useBuyer from "../Hooks/useBuyer";
 
 
 const DashboardLayout = () => {

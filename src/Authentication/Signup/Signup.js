@@ -4,7 +4,7 @@ import toast from "react-hot-toast";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Authentication/AuthProvider/AuthProvider";
 import { GoogleAuthProvider } from "firebase/auth";
-import useToken from "../../hooks/useToken";
+import useToken from "../../Hooks/useToken";
 
 const Signup = () => {
   const {register,handleSubmit,formState: { errors }} = useForm();
