@@ -3,7 +3,7 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 10vmin;
   pointer-events: none;
 }
 
@@ -47,7 +47,7 @@
   background-repeat: no-repeat;
   background-position: right;
   background-size: auto;
-
+  background-attachment: fixed;
 }
 .newsletter-bg{
   background-image:  url("https://i.ibb.co/N1rpdCp/newsletter.png");
@@ -60,4 +60,142 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: auto;
+}
+
+/* HEADER STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+* {
+	-webkit-transition-property: all;
+	-webkit-transition-duration: .2s;
+  -moz-transition-timing-function: cubic-bezier(100,50,21,6);
+	-moz-transition-property: all;
+  -moz-transition-timing-function: cubic-bezier(100,50,21,6);
+  transition-property: all;
+  transition-duration: .2s;
+  transition-timing-function: cubic-bezier(100,50,21,6);
+}
+.style-1 {
+	text-align: center;
+}
+.nav-content{
+  padding:10px 5px;
+}
+.nav-content span{
+  color:#999;
+  background:rgba(0, 0, 0);
+  padding:10px 20px;
+  text-decoration:none;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  font-size: 16px;
+}
+
+.nav-content span:hover{
+  border:none;
+  background:rgba(0, 0, 0, 0.4);
+  background:#fff;
+  padding:20px 20px;
+  color:#1b1b1b;
+}
+
+.page-header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 20px 0;
+  z-index: 1;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.25), rgb(10, 175, 216,1));
+}
+
+.page-header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.page-header .large-menu {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 14px 20px;
+  border-radius: 10px;
+  color: white;
+  background: #08a6df;
+  transition: background 0.3s;
+}
+
+.page-header .large-menu:hover {
+  background: #0ab8f6;
+}
+
+/* STICKY STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.page-header.is-sticky {
+  position: fixed;
+  box-shadow: 0 5px 16px rgba(0, 0, 0, 0.1);
+  padding: 8px 0;
+  backdrop-filter: blur(10px);
+  animation: slideDown 0.35s ease-out;
+  background-color: rgb(27, 27, 43, 0.15);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(10, 175, 216,0));
+}
+
+.page-header.is-sticky img {
+  max-width: 80%;
+}
+
+.page-header.is-sticky .large-menu {
+  font-size: 14px;
+  padding: 7px 10px;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+/* Top Product card style */
+.movie-card{
+  margin-top:20px;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.movie-card:hover{
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.movie-card .btn{
+  border-radius:2px;
+  text-transform:uppercase;
+  font-size:12px;
+  padding:7px 20px;
+}
+.movie-card .card-img-block {
+  width: 91%;
+  margin: 0 auto;
+  position: relative;
+  top: -20px;
+  
+}
+.movie-card .card-img-block img{
+  border-radius:5px;
+  box-shadow:0 0 10px rgba(0,0,0,0.63);
+}
+.movie-card h5{
+  color:#4E5E30;
+  font-weight:600;
+}
+.movie-card p{
+  font-size:14px;
+  font-weight:300;
+}
+.movie-card .btn-primary{
+  background-color:#4E5E30;
+  border-color:#4E5E30;
 }

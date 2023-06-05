@@ -76,8 +76,8 @@ const Signup = () => {
   };
 
   return (
-    <div className="h-[700px] flex items-center justify-around">
-      <div className="w-96 p-7 shadow  bg-primary">
+    <div className="flex items-center justify-around bg-gradient-to-tl from-teal-400 to-indigo-900">
+      <div className="w-96 p-7 mt-32 mb-10 mx-5 shadow  bg-primary">
         <h1 className="text-3xl text-center">Sign Up</h1>
         <form onSubmit={handleSubmit(handleSignup)}>
           <div className="form-control w-full my-2">

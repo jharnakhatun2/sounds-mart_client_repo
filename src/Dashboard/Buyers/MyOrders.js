@@ -32,7 +32,7 @@ const MyOrders = () => {
               <th>Pay</th>
             </tr>
           </thead>
-          <tbody>
+          <tbody >
             {
              bookings.map((booking,i)=><tr key={booking._id}>
               <th>{i + 1}</th>

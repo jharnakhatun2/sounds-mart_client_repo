@@ -25,6 +25,7 @@ import SellerRoutes from '../SellerRoutes';
 import BuyerRoutes from '../BuyerRoutes';
 import AllBuyers from '../../Dashboard/Admin/AllBuyers';
 import AllSellers from '../../Dashboard/Admin/AllSellers';
+import { Wishlist } from '../../Pages/Wishlist/Wishlist';
 
 
 const router = createBrowserRouter([
@@ -55,7 +56,7 @@ const router = createBrowserRouter([
             },
             {
                 path: '/products',
-                element: <Products></Products>,
+                element: <PrivateRoute><Products></Products></PrivateRoute>,
             },
             {
                 path: '/products/:id',
@@ -78,6 +79,11 @@ const router = createBrowserRouter([
                 loader: async ({params})=>{
                   return fetch(`https://sounds-mart-server-jharna203.vercel.app/blogs/${params.id}`)
                 }
+            },
+            {
+                path: "/wishlist",
+                element: <Wishlist />
+                
             },
               {
                 path: '*',

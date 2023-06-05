@@ -19,10 +19,10 @@ const Blogs = () => {
         }
     })
     return (
-        <div className='m-4 p-5'>
+        <div className='mx-0 lg:mx-4 mt-20 lg:mt-28  p-0 lg:p-5'>
                 <h2 className='text-center mt-3 text-2xl font-semibold'>Our <span className='text-secondary'>Blogs</span> </h2>
                 <Divider></Divider>
-            <section className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 m-10 p-10'>
+            <section className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mx-0 lg:mx-10 p-5 lg:p-10'>
                 {
                     blogs.map((blog) => {
                         const { _id, title, des } = blog

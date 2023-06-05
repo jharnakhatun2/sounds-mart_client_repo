@@ -43,10 +43,7 @@ const BookingModal = ({ bookingModal,setBookingModal }) => {
           }else{
         toast.error(data.message);
       }
-        });
-        
-       
-        
+        });  
     }
     
   return (
