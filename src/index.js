@@ -5,6 +5,8 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import AuthProvider from './Authentication/AuthProvider/AuthProvider';
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { Carousel, initTE } from "tw-elements";
+initTE({ Carousel }, true );
 
 const queryClient = new QueryClient();
 

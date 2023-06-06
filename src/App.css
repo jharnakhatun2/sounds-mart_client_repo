@@ -133,6 +133,7 @@
 /* STICKY STYLES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .page-header.is-sticky {
+  z-index: 100;
   position: fixed;
   box-shadow: 0 5px 16px rgba(0, 0, 0, 0.1);
   padding: 8px 0;
@@ -198,4 +199,40 @@
 .movie-card .btn-primary{
   background-color:#4E5E30;
   border-color:#4E5E30;
+}
+
+/* Review slider */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-slide {
+  width: 80%;
+}
+
+.swiper-slide:nth-child(2n) {
+  width: 60%;
+}
+
+.swiper-slide:nth-child(3n) {
+  width: 40%;
 }

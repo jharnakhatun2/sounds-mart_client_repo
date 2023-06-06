@@ -54,7 +54,7 @@ const Navbar = () => {
   });
 
   return (
-    <header className=" page-header">
+    <header className=" page-header z-30">
       <div className="px-5">
         <nav className="flex">
           {/* ============Dropdown Menu for small device============== */}

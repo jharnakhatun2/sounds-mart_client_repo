@@ -24,10 +24,10 @@ const Advertise = () => {
     return <Loading></Loading>
   }
   return (
-    <div className="bg-base-200 p-10">
+    <div className=" bg-base-200 p-10">
     <div className="m-10">
-      <h2 className="text-2xl font-semibold">Our Latest Products : </h2>
-    
+      <h2 className="text-left text-3xl font-bold uppercase">NEW ARRIVALS </h2>
+      <div className="divider mb-20 h-1 w-1/12  bg-secondary"></div>
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
     {
       advproducts.map(advProduct =>{
