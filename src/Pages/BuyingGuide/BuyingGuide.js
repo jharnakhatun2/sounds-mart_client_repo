@@ -4,25 +4,25 @@ export const BuyingGuide = () => {
   return (
     <div>
         <section>
-  <div className="mx-auto max-w-screen-2xl px-4 py-16 sm:px-6 lg:px-8">
+  <div className="mx-auto max-w-screen-2xl px-4 py-16 sm:px-6 lg:px-16">
     <div className="grid grid-cols-1 lg:h-screen lg:grid-cols-2">
-      <div className="relative z-10 lg:py-16">
+      <div className="relative z-10 lg:py-16 mb-5 md:mb-5 lg:mb-0">
         <div className="relative h-64 sm:h-80 lg:h-full">
           <img
             alt="House"
-            src="https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+            src="https://i.ibb.co/4KtywXG/benjamin-lehman-OK7-3-Ol-MCB4-unsplash.jpg"
             className="absolute inset-0 h-full w-full object-cover"
           />
         </div>
       </div>
 
-      <div className="relative flex items-center bg-gray-100">
+      <div className="relative flex items-center bg-gray-100 shadow-lg py-5">
         <span
           className="hidden lg:absolute lg:inset-y-0 lg:-start-16 lg:block lg:w-16 lg:bg-gray-100"
         ></span>
 
         {/* buying guide */}
-        <div class="w-full shrink-0 grow-0 basis-auto md:px-6 lg:w-7/12">
+        <div class="w-full shrink-0 grow-0 basis-auto md:px-6 lg:w-8/12">
         <div class="mb-12 flex">
           <div class="shrink-0">
             <div class="rounded-md p-4 shadow-lg bg-[hsl(231,52.6%,20%)] dark:bg-[hsl(231,52.6%,30%)]">
@@ -34,9 +34,9 @@ export const BuyingGuide = () => {
             </div>
           </div>
           <div class="ml-4 grow">
-            <p class="mb-2 font-bold">Support 24/7</p>
+            <p class="mb-2 font-bold">Sound Quality</p>
             <p class="text-neutral-500 dark:text-neutral-300">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Immersive sound seek clear, balanced audio for a captivating experience.
             </p>
           </div>
         </div>
@@ -52,9 +52,9 @@ export const BuyingGuide = () => {
             </div>
           </div>
           <div class="ml-4 grow">
-            <p class="mb-2 font-bold">Safe and solid</p>
+            <p class="mb-2 font-bold">Price Consideration</p>
             <p class="text-neutral-500 dark:text-neutral-300">
-              Eum nostrum fugit numquam, voluptates veniam neque quibusdam
+            Value for money determine budget, prioritize features for a smart purchase.
             </p>
           </div>
         </div>
@@ -70,9 +70,9 @@ export const BuyingGuide = () => {
             </div>
           </div>
           <div class="ml-4 grow">
-            <p class="mb-2 font-bold">Extremely fast</p>
+            <p class="mb-2 font-bold">Wired or Wireless</p>
             <p class="text-neutral-500 dark:text-neutral-300">
-              Enim cupiditate, minus nulla dolor cumque iure eveniet facere
+            Wired or wireless consider audio quality, convenience, and freedom of movement.
             </p>
           </div>
         </div>
@@ -88,9 +88,9 @@ export const BuyingGuide = () => {
             </div>
           </div>
           <div class="ml-4 grow">
-            <p class="mb-2 font-bold">Live analytics</p>
+            <p class="mb-2 font-bold">Noise Cancellation</p>
             <p class="text-neutral-500 dark:text-neutral-300">
-              Illum doloremque ea, blanditiis sed dolor laborum praesentium
+            Peaceful listening opt for active noise cancellation to block out distractions.
             </p>
           </div>
         </div>

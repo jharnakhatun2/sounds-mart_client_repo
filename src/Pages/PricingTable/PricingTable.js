@@ -4,31 +4,30 @@ export const PricingTable = () => {
   return (
     // <!-- ====== Pricing Section Start -->
     <section
-      class="container relative z-20 overflow-hidden bg-white pt-20 pb-12 lg:pt-[120px] lg:pb-[90px] mx-auto"
+      class="container bg-[#e646f513] relative z-20 overflow-hidden mx-auto max-w-screen-2xl px-4 py-20 sm:px-6 lg:px-16"
     >
       <div class="container mx-auto">
         <div class="-mx-4 flex flex-wrap">
           <div class="w-full px-4">
             <div class="mx-auto mb-[60px] max-w-[510px] text-center lg:mb-20">
-              <span class="text-primary mb-2 block text-lg font-semibold">
-                Pricing Table
-              </span>
               <h2
                 class="text-dark mb-4 text-3xl font-bold sm:text-4xl md:text-[40px]"
               >
                 Our Pricing Plan
               </h2>
+              <div className="divider mx-auto  h-1 w-1/12  bg-secondary"></div>
               <p class="text-body-color text-base">
-                There are many variations of passages of Lorem Ipsum available but
-                the majority have suffered alteration in some form.
+              Affordable vendor pricing: Basic, Standard, Premium packages tailored to suit your needs. Unlock the best value for your business.
               </p>
             </div>
           </div>
         </div>
         <div class="-mx-4 flex flex-wrap justify-center">
-          <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+
+          <div class="w-full px-4 md:w-1/2 lg:w-1/3 ">
             <div
-              class="border-primary shadow-pricing relative z-10 mb-10 overflow-hidden rounded-xl border border-opacity-20 bg-white py-10 px-8 sm:p-12 lg:py-10 lg:px-6 xl:p-12"
+              class="border-primary shadow-pricing relative z-10 mb-10 overflow-hidden rounded-xl border border-opacity-20 bg-white py-10 px-8 sm:p-12 lg:py-10 lg:px-6 xl:p-12 hover:shadow-2xl transition-all duration-500 
+              ease-out"
             >
               <span class="text-primary mb-4 block text-lg font-semibold">
                 Personal
@@ -38,30 +37,21 @@ export const PricingTable = () => {
                 <span class="text-body-color text-base font-medium"> / year </span>
               </h2>
               <p
-                class="text-body-color mb-8 border-b border-[#F2F2F2] pb-8 text-base"
+                class="text-body-color mb-8 border-t border-b border-[#F2F2F2] pt-5 pb-5 text-base"
               >
-                Perfect for using in a personal website or a client project.
+               Essential features for starting vendors
               </p>
               <div class="mb-7">
-                <p class="text-body-color mb-1 text-base leading-loose">1 User</p>
+                <p class="text-body-color mb-1 text-base leading-loose">Basic Listing</p>
                 <p class="text-body-color mb-1 text-base leading-loose">
-                  All UI components
+                Product Images
                 </p>
                 <p class="text-body-color mb-1 text-base leading-loose">
-                  Lifetime access
-                </p>
-                <p class="text-body-color mb-1 text-base leading-loose">
-                  Free updates
-                </p>
-                <p class="text-body-color mb-1 text-base leading-loose">
-                  Use on 1 (one) project
-                </p>
-                <p class="text-body-color mb-1 text-base leading-loose">
-                  3 Months support
+                Order Management
                 </p>
               </div>
               <a 
-                href="javascript:void(0)"
+                href="/dashboard"
                 class="text-primary hover:bg-primary hover:border-primary block w-full rounded-md border border-[#D4DEFF] bg-transparent p-4 text-center text-base font-semibold transition hover:text-white"
               >
                 Choose Personal
@@ -330,7 +320,8 @@ export const PricingTable = () => {
           </div>
           <div class="w-full px-4 md:w-1/2 lg:w-1/3">
             <div
-              class="border-primary shadow-pricing relative z-10 mb-10 overflow-hidden rounded-xl border border-opacity-20 bg-white py-10 px-8 sm:p-12 lg:py-10 lg:px-6 xl:p-12"
+              class="border-primary shadow-pricing relative z-10 mb-10 overflow-hidden rounded-xl border border-opacity-20 bg-white py-10 px-8 sm:p-12 lg:py-10 lg:px-6 xl:p-12 hover:shadow-2xl transition-all duration-500 
+              ease-out"
             >
               <span class="text-primary mb-4 block text-lg font-semibold">
                 Business
@@ -340,30 +331,21 @@ export const PricingTable = () => {
                 <span class="text-body-color text-base font-medium"> / year </span>
               </h2>
               <p
-                class="text-body-color mb-8 border-b border-[#F2F2F2] pb-8 text-base"
+                class="text-body-color  mb-8 border-t border-b border-[#F2F2F2] pt-5 pb-5 text-base"
               >
-                Perfect for using in a Business website or a client project.
+                Enhanced Visibility, Advanced Tools
               </p>
               <div class="mb-7">
-                <p class="text-body-color mb-1 text-base leading-loose">5 Users</p>
+                <p class="text-body-color mb-1 text-base leading-loose">Enhanced Product Promotion</p>
                 <p class="text-body-color mb-1 text-base leading-loose">
-                  All UI components
+                Advanced Analytics and Reporting
                 </p>
                 <p class="text-body-color mb-1 text-base leading-loose">
-                  Lifetime access
-                </p>
-                <p class="text-body-color mb-1 text-base leading-loose">
-                  Free updates
-                </p>
-                <p class="text-body-color mb-1 text-base leading-loose">
-                  Use on 3 (Three) project
-                </p>
-                <p class="text-body-color mb-1 text-base leading-loose">
-                  4 Months support
+                Dedicated Account Manager
                 </p>
               </div>
               <a
-                href="javascript:void(0)"
+                href="/dashboard"
                 class="bg-primary border-primary block w-full rounded-md border p-4 text-center text-base font-semibold text-white transition hover:bg-opacity-90"
               >
                 Choose Business
@@ -632,7 +614,8 @@ export const PricingTable = () => {
           </div>
           <div class="w-full px-4 md:w-1/2 lg:w-1/3">
             <div
-              class="border-primary shadow-pricing relative z-10 mb-10 overflow-hidden rounded-xl border border-opacity-20 bg-white py-10 px-8 sm:p-12 lg:py-10 lg:px-6 xl:p-12"
+              class="border-primary shadow-pricing relative z-10 mb-10 overflow-hidden rounded-xl border border-opacity-20 bg-white py-10 px-8 sm:p-12 lg:py-10 lg:px-6 xl:p-12 hover:shadow-2xl transition-all duration-500 
+              ease-out"
             >
               <span class="text-primary mb-4 block text-lg font-semibold">
                 Professional
@@ -642,32 +625,23 @@ export const PricingTable = () => {
                 <span class="text-body-color text-base font-medium"> / year </span>
               </h2>
               <p
-                class="text-body-color mb-8 border-b border-[#F2F2F2] pb-8 text-base"
+                class="text-body-color  mb-8 border-t border-b border-[#F2F2F2] pt-5 pb-5 text-base"
               >
-                Perfect for using in a Professional website or a client project.
+                Unlimited Listings, Priority Support
               </p>
               <div class="mb-7">
                 <p class="text-body-color mb-1 text-base leading-loose">
-                  Unlimited Users
+                Unlimited Listings
                 </p>
                 <p class="text-body-color mb-1 text-base leading-loose">
-                  All UI components
+                  Priority Support
                 </p>
                 <p class="text-body-color mb-1 text-base leading-loose">
-                  Lifetime access
-                </p>
-                <p class="text-body-color mb-1 text-base leading-loose">
-                  Free updates
-                </p>
-                <p class="text-body-color mb-1 text-base leading-loose">
-                  Use on Unlimited project
-                </p>
-                <p class="text-body-color mb-1 text-base leading-loose">
-                  12 Months support
+                  Advanced Marketing Tools
                 </p>
               </div>
               <a
-                href="javascript:void(0)"
+                href="/dashboard"
                 class="text-primary hover:bg-primary hover:border-primary block w-full rounded-md border border-[#D4DEFF] bg-transparent p-4 text-center text-base font-semibold transition hover:text-white"
               >
                 Choose Professional

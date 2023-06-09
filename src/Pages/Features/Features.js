@@ -15,29 +15,14 @@ export const Features = () => {
           <div className="mb-12 lg:mb-0">
             <div className="block h-full rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
               <div className="flex justify-center">
-                <div className="-mt-8 inline-block rounded-full bg-primary-100 p-4 text-primary shadow-md">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="2"
-                    stroke="currentColor"
-                    className="h-7 w-7"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437l1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008z"
-                    />
-                  </svg>
+                <div className="-mt-16 inline-block rounded-full bg-primary-100 p-4 text-primary shadow-md">
+                <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" fill="currentColor" class="bi bi-soundwave" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M8.5 2a.5.5 0 0 1 .5.5v11a.5.5 0 0 1-1 0v-11a.5.5 0 0 1 .5-.5zm-2 2a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zm4 0a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zm-6 1.5A.5.5 0 0 1 5 6v4a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm8 0a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm-10 1A.5.5 0 0 1 3 7v2a.5.5 0 0 1-1 0V7a.5.5 0 0 1 .5-.5zm12 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0V7a.5.5 0 0 1 .5-.5z"/> </svg>
                 </div>
               </div>
               <div className="p-6">
-                <h5 className="mb-4 text-lg font-semibold">Support 24/7</h5>
+                <h5 className="mb-4 text-lg font-semibold">Resonate Your Sound</h5>
                 <p>
-                  Laudantium totam quas cumque pariatur at doloremque hic quos
-                  quia eius. Reiciendis optio minus mollitia rerum labore
-                  facilis inventore voluptatem ad, quae quia sint.
+                Immerse yourself in a world of superior audio quality with our collection of pre-owned headphones. Each pair has been meticulously tested and inspected to ensure exceptional sound reproduction and comfort.
                 </p>
               </div>
             </div>
@@ -46,29 +31,14 @@ export const Features = () => {
           <div className="mb-12 lg:mb-0">
             <div className="block h-full rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
               <div className="flex justify-center">
-                <div className="-mt-8 inline-block rounded-full bg-primary-100 p-4 text-primary shadow-md">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="2"
-                    stroke="currentColor"
-                    className="h-7 w-7"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"
-                    />
-                  </svg>
+                <div className="-mt-16 inline-block rounded-full bg-primary-100 p-4 text-primary shadow-md">
+                <svg width="72" height="72" viewBox="0 0 48 48" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M4 28C4 26.8954 4.89543 26 6 26H10V38H6C4.89543 38 4 37.1046 4 36V28Z" fill="none"/><path d="M10 36V24M10 26H6C4.89543 26 4 26.8954 4 28V36C4 37.1046 4.89543 38 6 38H10V26Z" stroke="#333" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/><path d="M38 26H42C43.1046 26 44 26.8954 44 28V36C44 37.1046 43.1046 38 42 38H38V26Z" fill="none"/><path d="M38 24V36M38 26H42C43.1046 26 44 26.8954 44 28V36C44 37.1046 43.1046 38 42 38H38V26Z" stroke="#333" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 36V24C10 16.268 16.268 10 24 10C31.732 10 38 16.268 38 24V36M10 26V38M38 26V38" stroke="#333" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 32H20L22 26L26 38L28 32H32" stroke="#333" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/></svg>
                 </div>
               </div>
               <div className="p-6">
-                <h5 className="mb-4 text-lg font-semibold">Safe and solid</h5>
+                <h5 className="mb-4 text-lg font-semibold">Rediscover Audio Bliss</h5>
                 <p>
-                  Eum nostrum fugit numquam, voluptates veniam neque quibusdam
-                  ullam aspernatur odio soluta, quisquam dolore animi mollitia a
-                  omnis praesentium, expedita nobis!
+                Unleash the true potential of your favorite tunes with our range of headphones. Whether you're a music enthusiast, an avid gamer, or a podcast lover, our diverse selection has something for everyone.
                 </p>
               </div>
             </div>
@@ -77,29 +47,14 @@ export const Features = () => {
           <div className="">
             <div className="block h-full rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
               <div className="flex justify-center">
-                <div className="-mt-8 inline-block rounded-full bg-primary-100 p-4 text-primary shadow-md">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="2"
-                    stroke="currentColor"
-                    className="h-7 w-7"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"
-                    />
-                  </svg>
+                <div className="-mt-16 inline-block rounded-full bg-primary-100 p-4 text-primary shadow-md">
+                <svg width="72" height="72" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"> <path d="M4 4h4v2H4v8h4v2H2V4h2zm6 0h10v2h-8v12h8v2H10V4zm12 0h-2v16h2V4zm-7 4h2v2h-2V8zm3 4h-4v4h4v-4zM8 18H4v2h4v-2z" fill="currentColor"/> </svg>
                 </div>
               </div>
               <div className="p-6">
-                <h5 className="mb-4 text-lg font-semibold">Extremely fast</h5>
+                <h5 className="mb-4 text-lg font-semibold">Timeless Melodies</h5>
                 <p>
-                  Enim cupiditate, minus nulla dolor cumque iure eveniet facere
-                  ullam beatae hic voluptatibus dolores exercitationem? Facilis
-                  debitis aspernatur amet nisi?
+                Dive into the nostalgic world of vintage audio with our collection of classic headphones. Our curated range features iconic designs from yesteryears, rekindling the magic of analog sound in a digital era.
                 </p>
               </div>
             </div>

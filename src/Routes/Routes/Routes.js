@@ -26,6 +26,8 @@ import BuyerRoutes from '../BuyerRoutes';
 import AllBuyers from '../../Dashboard/Admin/AllBuyers';
 import AllSellers from '../../Dashboard/Admin/AllSellers';
 import { Wishlist } from '../../Pages/Wishlist/Wishlist';
+import { Collections } from '../../Pages/Collections/Collections';
+import { Collection } from '../../Pages/Collections/Collection';
 
 
 const router = createBrowserRouter([
@@ -81,6 +83,18 @@ const router = createBrowserRouter([
                 }
             },
             {
+                path: "/headphone",
+                element: <Collections />
+                
+            },
+              {
+                path: "/headphone/:id",
+                element: <Collection />,
+                loader: async ({params})=>{
+                  return fetch(`http://localhost:5000/headphone/${params.id}`)
+                }
+            },
+            {
                 path: "/wishlist",
                 element: <Wishlist />
                 
@@ -110,11 +124,11 @@ const router = createBrowserRouter([
             },
             {
                 path:'/dashboard/allsellers',
-                element: <AdminRoutes><AllSellers></AllSellers></AdminRoutes>
+                element: <AllSellers></AllSellers>
             },
             {
                 path:'/dashboard/addproduct',
-                element: <AdminRoutes><AddProduct></AddProduct></AdminRoutes>
+                element: <AddProduct></AddProduct>
             },
             {
                 path:'/dashboard/myproducts',

@@ -1,113 +1,133 @@
-import React from 'react'
+import React from "react";
+import { Link } from "react-router-dom";
+import PrimaryButton from "../../Component/Button/PrimaryButton";
+import { useQuery } from "@tanstack/react-query";
 
 export const TopProducts = () => {
+  const { data: headphone = [] } = useQuery({
+    queryKey: ["headphone"],
+    queryFn: async () => {
+      const res = await fetch(`https://sounds-mart-server-jharna203.vercel.app/headphone`, {
+        headers: {
+          authorization: `bearer ${localStorage.getItem("accessToken")}`,
+        },
+      });
+      const data = await res.json();
+      console.log(data);
+      return data;
+    },
+  });
+
+  const topFourProducts = headphone.slice(0, 4);
   return (
-    <div className="bg-blend-multiply bg-fixed" style={{backgroundImage: "url(" + "https://i.ibb.co/bJ3GJng/sounds.jpg" + ")",
+    <div className="bg-blend-multiply bg-fixed" style={{backgroundImage: "url(" + "https://i.ibb.co/N1rpdCp/newsletter.png" + ")",
     backgroundPosition: 'center',
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat'}}>
-    <div className="container py-20 lg:py-24 mx-auto md:px-6">
-      {/* <!-- Section: Design Block --> */}
-      <section className="text-center">
-        <h2 className="text-left text-3xl text-white font-bold uppercase">Our Top Products</h2>
-            <div className="divider mb-20 h-1 w-1/12  bg-primary"></div>
-        <div className="grid lg:grid-cols-4 lg:gap-x-12">
-          <div className="mb-12 lg:mb-0">
-            <div className="block h-full rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
-              <div className="flex justify-center">
-                <div className="-mt-8 inline-block rounded-full bg-primary-100 p-4 text-primary shadow-md">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="2"
-                    stroke="currentColor"
-                    className="h-7 w-7"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437l1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008z"
+      <div className="container py-20 lg:py-24 mx-auto md:px-6">
+        {/* <!-- Section: Design Block --> */}
+        <section className="">
+          <h2 className="text-left text-3xl text-white font-bold uppercase">
+            Our Top Products
+          </h2>
+          <div className="divider mb-20 h-1 w-1/12  bg-primary"></div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:gap-x-12 gap-10">
+            {topFourProducts?.map((headphones) => {
+              const { _id, imageUrl, productName, rating, price } = headphones;
+              return (
+                <div
+                  key={_id}
+                  class="bg-white shadow-md rounded-lg max-w-sm dark:bg-gray-800 dark:border-gray-700"
+                >
+                  <a href="/">
+                    <img
+                      class="rounded-t-lg p-8"
+                      src={imageUrl}
+                      alt="product image"
                     />
-                  </svg>
+                  </a>
+                  <div class="px-5 py-5 bg-gray-100 rounded-b-lg">
+                    <a href="/">
+                      <h3 class="uppercase tracking-wide text-sm font-bold text-gray-700">
+                        {productName}
+                      </h3>
+                    </a>
+                    <div class="flex justify-between items-center mt-2.5 mb-5">
+                      <div class="flex items-center">
+                        <svg
+                          class="w-5 h-5 text-yellow-300"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg
+                          class="w-5 h-5 text-yellow-300"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg
+                          class="w-5 h-5 text-yellow-300"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg
+                          class="w-5 h-5 text-yellow-300"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg
+                          class="w-5 h-5 text-yellow-300"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <span class="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3">
+                          {rating}
+                        </span>
+                      </div>
+                      <div class="flex justify-end">
+                        <svg
+                          class="h-6 w-6 text-secondary fill-current"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                        >
+                          <path d="M12.76 3.76a6 6 0 0 1 8.48 8.48l-8.53 8.54a1 1 0 0 1-1.42 0l-8.53-8.54a6 6 0 0 1 8.48-8.48l.76.75.76-.75zm7.07 7.07a4 4 0 1 0-5.66-5.66l-1.46 1.47a1 1 0 0 1-1.42 0L9.83 5.17a4 4 0 1 0-5.66 5.66L12 18.66l7.83-7.83z"></path>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="pt-3 border-t border-gray-300 flex items-center justify-between">
+                      <span class="text-2xl text-gray-900">
+                        $<span className="font-bold">{price}</span>
+                      </span>
+                      <Link to="/products">
+                        <PrimaryButton>Add to cart</PrimaryButton>
+                      </Link>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div className="p-6">
-                <h5 className="mb-4 text-lg font-semibold">Support 24/7</h5>
-                <p>
-                  Laudantium totam quas cumque pariatur at doloremque hic quos
-                  quia eius. Reiciendis optio minus mollitia rerum labore
-                  facilis inventore voluptatem ad, quae quia sint.
-                </p>
-              </div>
-            </div>
-          </div>
+              );
+            })}
 
-          <div className="mb-12 lg:mb-0">
-            <div className="block h-full rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
-              <div className="flex justify-center">
-                <div className="-mt-8 inline-block rounded-full bg-primary-100 p-4 text-primary shadow-md">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="2"
-                    stroke="currentColor"
-                    className="h-7 w-7"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"
-                    />
-                  </svg>
-                </div>
-              </div>
-              <div className="p-6">
-                <h5 className="mb-4 text-lg font-semibold">Safe and solid</h5>
-                <p>
-                  Eum nostrum fugit numquam, voluptates veniam neque quibusdam
-                  ullam aspernatur odio soluta, quisquam dolore animi mollitia a
-                  omnis praesentium, expedita nobis!
-                </p>
-              </div>
-            </div>
-          </div>
+            {/*single Card Start*/}
 
-          <div className="">
-            <div className="block h-full rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
-              <div className="flex justify-center">
-                <div className="-mt-8 inline-block rounded-full bg-primary-100 p-4 text-primary shadow-md">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="2"
-                    stroke="currentColor"
-                    className="h-7 w-7"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"
-                    />
-                  </svg>
-                </div>
-              </div>
-              <div className="p-6">
-                <h5 className="mb-4 text-lg font-semibold">Extremely fast</h5>
-                <p>
-                  Enim cupiditate, minus nulla dolor cumque iure eveniet facere
-                  ullam beatae hic voluptatibus dolores exercitationem? Facilis
-                  debitis aspernatur amet nisi?
-                </p>
-              </div>
-            </div>
+            {/*single Card End*/}
           </div>
-        </div>
-      </section>
-      {/* <!-- Section: Design Block --> */}
+        </section>
+        {/* <!-- Section: Design Block --> */}
+      </div>
     </div>
-    </div>
-  )
-}
+  );
+};

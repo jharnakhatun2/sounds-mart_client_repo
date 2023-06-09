@@ -10,40 +10,54 @@ import { Autoplay, Pagination, Navigation } from "swiper";
 const reviews = [
   {
     id: 1,
-    title: "Stayin' Alive",
+    title: "Unparalleled Sound Quality and Comfort!",
     review:
-      "No, Rose, they are not breathing. And they have no arms or legs … Where are they? You know what? If we come across somebody with no arms or legs, do we bother resuscitating them? I mean, what quality of life do we have there?",
-    name: "Michael Scott",
+    "I am blown away by the exceptional sound quality and comfort of these headphones. The bass is deep, the mids are clear, and the highs are crisp. Additionally, the ear cushions provide a snug fit, allowing for hours of listening without any discomfort. Highly recommended!",
+    name: "Sarah T.",
   },
   {
-    id: 1,
-    title: "Stayin' Alive",
+    id: 2,
+    title: "Sleek Design and Incredible Noise Cancellation!",
     review:
-      "No, Rose, they are not breathing. And they have no arms or legs … Where are they? You know what? If we come across somebody with no arms or legs, do we bother resuscitating them? I mean, what quality of life do we have there?",
-    name: "Michael Scott",
+    "These headphones not only look sleek and stylish but also deliver an impressive noise-canceling experience. Whether I'm on a noisy train or in a bustling coffee shop, the outside world fades away, allowing me to enjoy my music without distractions. A must-have for any music lover!",
+    name: "Mark W.",
   },
   {
-    id: 1,
-    title: "Stayin' Alive",
+    id: 3,
+    title: "Unmatched Wireless Convenience and Battery Life!",
     review:
-      "No, Rose, they are not breathing. And they have no arms or legs … Where are they? You know what? If we come across somebody with no arms or legs, do we bother resuscitating them? I mean, what quality of life do we have there?",
-    name: "Michael Scott",
+    "I can't praise these headphones enough for their wireless convenience and remarkable battery life. The Bluetooth connectivity is seamless, and the range is impressive. I can move around my house freely without any audio interruptions. Plus, the battery life is exceptional, lasting me through long listening sessions. Perfect for on-the-go use!",
+    name: "Emily L.",
   },
   {
-    id: 1,
-    title: "Stayin' Alive",
+    id: 4,
+    title: "Outstanding Build Quality and Durability!",
     review:
-      "No, Rose, they are not breathing. And they have no arms or legs … Where are they? You know what? If we come across somebody with no arms or legs, do we bother resuscitating them? I mean, what quality of life do we have there?",
-    name: "Michael Scott",
-  },
+    "I have put these headphones through rigorous use, and they have proven to be incredibly durable. The build quality is outstanding, with sturdy materials that can withstand daily wear and tear. Whether I'm traveling or working out, I can trust these headphones to keep up with me. A reliable companion for any adventure!",
+    name: "David M.",
+  }
 ];
 export const Review = () => {
   return (
-    <div>
-      <section class="bg-gray-100 ">
-        <div class="mx-auto max-w-[1340px] px-4 py-16 sm:px-6 sm:py-24 lg:me-0 lg:pe-0 lg:ps-8">
+    <div className="py-8 lg:py-24 mx-auto md:px-6 bg-gray-100">
+      <section class="container mx-auto">
+        <div class="-mx-4 flex flex-wrap">
+          <div class="w-full px-4">
+            <div class="mx-auto mb-[60px] max-w-[510px] text-center lg:mb-20">
+              <h2 class="text-dark text-3xl font-bold sm:text-4xl md:text-[40px]">
+                Our Customer Review
+              </h2>
+              <p class="text-body-color text-base">
+                Exceptional Service and Unforgettable Experience - A Customer's
+                Delight!
+              </p>
+              <div className="divider mx-auto  h-1 w-1/12  bg-secondary"></div>
+            </div>
+          </div>
+        </div>
+        <div class="mx-auto max-w-[1340px]  lg:me-0 lg:pe-0 lg:ps-8">
           <div class="grid grid-cols-1 gap-y-8 lg:grid-cols-2 lg:items-center lg:gap-x-16">
-          <div class="max-w-xl ltr:sm:text-left rtl:sm:text-right">
+            <div class="max-w-xl ltr:sm:text-left rtl:sm:text-right">
               <h2 class="text-3xl font-bold tracking-tight sm:text-4xl">
                 Don't just take our word for it...
                 <br class="hidden sm:block lg:hidden" />
@@ -51,9 +65,8 @@ export const Review = () => {
               </h2>
 
               <p class="mt-4 text-gray-500">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Voluptas veritatis illo placeat harum porro optio fugit a culpa
-                sunt id!
+                The Customers were knowledgeable, helpful, and made us feel
+                valued. An absolute pleasure to do business with.
               </p>
 
               <div class="hidden lg:mt-8 lg:flex lg:gap-4">
@@ -118,7 +131,7 @@ export const Review = () => {
                           <div class="swiper-slide">
                             <blockquote class="flex h-full flex-col justify-between bg-white p-12 -z-10">
                               <div>
-                                <div class="flex gap-0.5 text-green-500">
+                                <div class="flex gap-0.5 text-[#eba421] justify-center">
                                   <svg
                                     class="h-5 w-5"
                                     fill="currentColor"
@@ -164,19 +177,18 @@ export const Review = () => {
                                     <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                                   </svg>
                                 </div>
-
                                 <div class="mt-4">
-                                  <p class="text-2xl font-bold text-pink-600 sm:text-3xl">
+                                  <p class="text-2xl font-bold text-primary">
                                     {review.title}
                                   </p>
 
-                                  <p class="mt-4 leading-relaxed text-gray-500">
-                                    {review.review}
+                                  <p class="text-sm mt-4 leading-relaxed text-gray-500">
+                                    "{review.review}"
                                   </p>
                                 </div>
                               </div>
 
-                              <footer class="mt-8 text-sm text-gray-500">
+                              <footer class="mt-4 text-sm font-bold text-gray-500">
                                 &mdash; {review.name}
                               </footer>
                             </blockquote>
@@ -188,9 +200,7 @@ export const Review = () => {
                 );
               })}
             </Swiper>
-            
           </div>
-
           <div class="mt-8 flex justify-center gap-4 lg:hidden">
             <button
               aria-label="Previous slide"
@@ -211,7 +221,6 @@ export const Review = () => {
                 />
               </svg>
             </button>
-
             <button
               aria-label="Next slide"
               class="next-button rounded-full border border-pink-600 p-4 text-pink-600 hover:bg-pink-600 hover:text-white"
