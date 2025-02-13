@@ -29,7 +29,7 @@ if(isLoading){
     <div className="divider mb-20 h-1 w-1/12  bg-secondary"></div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7 ">
       {
-        products.map(product =><div className="border-double border-4 p-2 hover:shadow-2xl" key={product._id}>
+        products?.map(product =><div className="border-double border-4 p-2 hover:shadow-2xl" key={product._id}>
             <Link className="link link-hover" to={`/products/${product._id}`}>
               <img
           className="mask mask-diamond mx-auto"

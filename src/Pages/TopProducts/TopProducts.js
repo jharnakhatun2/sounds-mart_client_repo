@@ -37,25 +37,25 @@ export const TopProducts = () => {
               return (
                 <div
                   key={_id}
-                  class="bg-white shadow-md rounded-lg max-w-sm dark:bg-gray-800 dark:border-gray-700"
+                  className="bg-white shadow-md rounded-lg max-w-sm dark:bg-gray-800 dark:border-gray-700"
                 >
                   <a href="/">
                     <img
-                      class="rounded-t-lg p-8"
+                      className="rounded-t-lg p-8"
                       src={imageUrl}
                       alt="product image"
                     />
                   </a>
-                  <div class="px-5 py-5 bg-gray-100 rounded-b-lg">
+                  <div className="px-5 py-5 bg-gray-100 rounded-b-lg">
                     <a href="/">
-                      <h3 class="uppercase tracking-wide text-sm font-bold text-gray-700">
+                      <h3 className="uppercase tracking-wide text-sm font-bold text-gray-700">
                         {productName}
                       </h3>
                     </a>
-                    <div class="flex justify-between items-center mt-2.5 mb-5">
-                      <div class="flex items-center">
+                    <div className="flex justify-between items-center mt-2.5 mb-5">
+                      <div className="flex items-center">
                         <svg
-                          class="w-5 h-5 text-yellow-300"
+                          className="w-5 h-5 text-yellow-300"
                           fill="currentColor"
                           viewBox="0 0 20 20"
                           xmlns="http://www.w3.org/2000/svg"
@@ -63,7 +63,7 @@ export const TopProducts = () => {
                           <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
                         </svg>
                         <svg
-                          class="w-5 h-5 text-yellow-300"
+                          className="w-5 h-5 text-yellow-300"
                           fill="currentColor"
                           viewBox="0 0 20 20"
                           xmlns="http://www.w3.org/2000/svg"
@@ -71,7 +71,7 @@ export const TopProducts = () => {
                           <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
                         </svg>
                         <svg
-                          class="w-5 h-5 text-yellow-300"
+                          className="w-5 h-5 text-yellow-300"
                           fill="currentColor"
                           viewBox="0 0 20 20"
                           xmlns="http://www.w3.org/2000/svg"
@@ -79,7 +79,7 @@ export const TopProducts = () => {
                           <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
                         </svg>
                         <svg
-                          class="w-5 h-5 text-yellow-300"
+                          className="w-5 h-5 text-yellow-300"
                           fill="currentColor"
                           viewBox="0 0 20 20"
                           xmlns="http://www.w3.org/2000/svg"
@@ -87,20 +87,20 @@ export const TopProducts = () => {
                           <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
                         </svg>
                         <svg
-                          class="w-5 h-5 text-yellow-300"
+                          className="w-5 h-5 text-yellow-300"
                           fill="currentColor"
                           viewBox="0 0 20 20"
                           xmlns="http://www.w3.org/2000/svg"
                         >
                           <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
                         </svg>
-                        <span class="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3">
+                        <span className="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3">
                           {rating}
                         </span>
                       </div>
-                      <div class="flex justify-end">
+                      <div className="flex justify-end">
                         <svg
-                          class="h-6 w-6 text-secondary fill-current"
+                          className="h-6 w-6 text-secondary fill-current"
                           xmlns="http://www.w3.org/2000/svg"
                           viewBox="0 0 24 24"
                         >
@@ -108,8 +108,8 @@ export const TopProducts = () => {
                         </svg>
                       </div>
                     </div>
-                    <div class="pt-3 border-t border-gray-300 flex items-center justify-between">
-                      <span class="text-2xl text-gray-900">
+                    <div className="pt-3 border-t border-gray-300 flex items-center justify-between">
+                      <span className="text-2xl text-gray-900">
                         $<span className="font-bold">{price}</span>
                       </span>
                       <Link to="/products">

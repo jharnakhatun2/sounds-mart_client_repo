@@ -70,7 +70,7 @@ const Signup = () => {
       .then((result) => {
         const user = result.user;
         console.log(user);
-        navigate("/");
+        
       })
       .catch((err) => console.log(err));
   };

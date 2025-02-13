@@ -92,7 +92,7 @@ const Navbar = () => {
                 width="35"
                 height="35"
                 fill="currentColor"
-                class="bi bi-bag text-black hover:text-primary  p-2 shadow hover:cursor-pointer"
+                className="bi bi-bag text-black hover:text-primary  p-2 shadow hover:cursor-pointer"
                 viewBox="0 0 16 16"
               >
                 {" "}
@@ -107,7 +107,7 @@ const Navbar = () => {
                   width="35"
                   height="35"
                   fill="currentColor"
-                  class="bi bi-heart text-black hover:text-primary p-2 shadow hover:cursor-pointer"
+                  className="bi bi-heart text-black hover:text-primary p-2 shadow hover:cursor-pointer"
                   viewBox="0 0 16 16"
                 >
                   {" "}
@@ -122,7 +122,7 @@ const Navbar = () => {
                 width="35"
                 height="35"
                 fill="currentColor"
-                class="bi bi-person text-black  hover:text-primary p-1 shadow hover:cursor-pointer"
+                className="bi bi-person text-black  hover:text-primary p-1 shadow hover:cursor-pointer"
                 viewBox="0 0 16 16"
               >
                 {" "}

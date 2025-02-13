@@ -40,14 +40,14 @@ const reviews = [
 export const Review = () => {
   return (
     <div className="py-8 lg:py-24 mx-auto md:px-6 bg-gray-100">
-      <section class="container mx-auto">
-        <div class="-mx-4 flex flex-wrap">
-          <div class="w-full px-4">
-            <div class="mx-auto mb-[60px] max-w-[510px] text-center lg:mb-20">
-              <h2 class="text-dark text-3xl font-bold sm:text-4xl md:text-[40px]">
+      <section className="container mx-auto">
+        <div className="-mx-4 flex flex-wrap">
+          <div className="w-full px-4">
+            <div className="mx-auto mb-[60px] max-w-[510px] text-center lg:mb-20">
+              <h2 className="text-dark text-3xl font-bold sm:text-4xl md:text-[40px]">
                 Our Customer Review
               </h2>
-              <p class="text-body-color text-base">
+              <p className="text-body-color text-base">
                 Exceptional Service and Unforgettable Experience - A Customer's
                 Delight!
               </p>
@@ -55,30 +55,30 @@ export const Review = () => {
             </div>
           </div>
         </div>
-        <div class="mx-auto max-w-[1340px]  lg:me-0 lg:pe-0 lg:ps-8">
-          <div class="grid grid-cols-1 gap-y-8 lg:grid-cols-2 lg:items-center lg:gap-x-16">
-            <div class="max-w-xl ltr:sm:text-left rtl:sm:text-right">
-              <h2 class="text-3xl font-bold tracking-tight sm:text-4xl">
+        <div className="mx-auto max-w-[1340px]  lg:me-0 lg:pe-0 lg:ps-8">
+          <div className="grid grid-cols-1 gap-y-8 lg:grid-cols-2 lg:items-center lg:gap-x-16">
+            <div className="max-w-xl ltr:sm:text-left rtl:sm:text-right">
+              <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
                 Don't just take our word for it...
-                <br class="hidden sm:block lg:hidden" />
+                <br className="hidden sm:block lg:hidden" />
                 Read reviews from our customers
               </h2>
 
-              <p class="mt-4 text-gray-500">
+              <p className="mt-4 text-gray-500">
                 The Customers were knowledgeable, helpful, and made us feel
                 valued. An absolute pleasure to do business with.
               </p>
 
-              <div class="hidden lg:mt-8 lg:flex lg:gap-4">
-                <button class="prev-button rounded-full border border-pink-600 p-3 text-pink-600 hover:bg-pink-600 hover:text-white">
-                  <span class="sr-only">Previous Slide</span>
+              <div className="hidden lg:mt-8 lg:flex lg:gap-4">
+                <button className="prev-button rounded-full border border-pink-600 p-3 text-pink-600 hover:bg-pink-600 hover:text-white">
+                  <span className="sr-only">Previous Slide</span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke-width="1.5"
                     stroke="currentColor"
-                    class="h-5 w-5 rtl:rotate-180"
+                    className="h-5 w-5 rtl:rotate-180"
                   >
                     <path
                       stroke-linecap="round"
@@ -88,10 +88,10 @@ export const Review = () => {
                   </svg>
                 </button>
 
-                <button class="next-button rounded-full border border-pink-600 p-3 text-pink-600 hover:bg-pink-600 hover:text-white">
-                  <span class="sr-only">Next Slide</span>
+                <button className="next-button rounded-full border border-pink-600 p-3 text-pink-600 hover:bg-pink-600 hover:text-white">
+                  <span className="sr-only">Next Slide</span>
                   <svg
-                    class="h-5 w-5 rtl:rotate-180"
+                    className="h-5 w-5 rtl:rotate-180"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -125,15 +125,15 @@ export const Review = () => {
               {reviews?.map((review) => {
                 return (
                   <SwiperSlide key={review.id}>
-                    <div class="-mx-6 lg:col-span-2 lg:mx-0">
-                      <div class="swiper-container !overflow-hidden">
-                        <div class="swiper-wrapper">
-                          <div class="swiper-slide">
-                            <blockquote class="flex h-full flex-col justify-between bg-white p-12 -z-10">
+                    <div className="-mx-6 lg:col-span-2 lg:mx-0">
+                      <div className="swiper-container !overflow-hidden">
+                        <div className="swiper-wrapper">
+                          <div className="swiper-slide">
+                            <blockquote className="flex h-full flex-col justify-between bg-white p-12 -z-10">
                               <div>
-                                <div class="flex gap-0.5 text-[#eba421] justify-center">
+                                <div className="flex gap-0.5 text-[#eba421] justify-center">
                                   <svg
-                                    class="h-5 w-5"
+                                    className="h-5 w-5"
                                     fill="currentColor"
                                     viewBox="0 0 20 20"
                                     xmlns="http://www.w3.org/2000/svg"
@@ -142,7 +142,7 @@ export const Review = () => {
                                   </svg>
 
                                   <svg
-                                    class="h-5 w-5"
+                                    className="h-5 w-5"
                                     fill="currentColor"
                                     viewBox="0 0 20 20"
                                     xmlns="http://www.w3.org/2000/svg"
@@ -151,7 +151,7 @@ export const Review = () => {
                                   </svg>
 
                                   <svg
-                                    class="h-5 w-5"
+                                    className="h-5 w-5"
                                     fill="currentColor"
                                     viewBox="0 0 20 20"
                                     xmlns="http://www.w3.org/2000/svg"
@@ -160,7 +160,7 @@ export const Review = () => {
                                   </svg>
 
                                   <svg
-                                    class="h-5 w-5"
+                                    className="h-5 w-5"
                                     fill="currentColor"
                                     viewBox="0 0 20 20"
                                     xmlns="http://www.w3.org/2000/svg"
@@ -169,7 +169,7 @@ export const Review = () => {
                                   </svg>
 
                                   <svg
-                                    class="h-5 w-5"
+                                    className="h-5 w-5"
                                     fill="currentColor"
                                     viewBox="0 0 20 20"
                                     xmlns="http://www.w3.org/2000/svg"
@@ -177,18 +177,18 @@ export const Review = () => {
                                     <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                                   </svg>
                                 </div>
-                                <div class="mt-4">
-                                  <p class="text-2xl font-bold text-primary">
+                                <div className="mt-4">
+                                  <p className="text-2xl font-bold text-primary">
                                     {review.title}
                                   </p>
 
-                                  <p class="text-sm mt-4 leading-relaxed text-gray-500">
+                                  <p className="text-sm mt-4 leading-relaxed text-gray-500">
                                     "{review.review}"
                                   </p>
                                 </div>
                               </div>
 
-                              <footer class="mt-4 text-sm font-bold text-gray-500">
+                              <footer className="mt-4 text-sm font-bold text-gray-500">
                                 &mdash; {review.name}
                               </footer>
                             </blockquote>
@@ -201,13 +201,13 @@ export const Review = () => {
               })}
             </Swiper>
           </div>
-          <div class="mt-8 flex justify-center gap-4 lg:hidden">
+          <div className="mt-8 flex justify-center gap-4 lg:hidden">
             <button
               aria-label="Previous slide"
-              class="prev-button rounded-full border border-pink-600 p-4 text-pink-600 hover:bg-pink-600 hover:text-white"
+              className="prev-button rounded-full border border-pink-600 p-4 text-pink-600 hover:bg-pink-600 hover:text-white"
             >
               <svg
-                class="h-5 w-5 -rotate-180 transform"
+                className="h-5 w-5 -rotate-180 transform"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -223,10 +223,10 @@ export const Review = () => {
             </button>
             <button
               aria-label="Next slide"
-              class="next-button rounded-full border border-pink-600 p-4 text-pink-600 hover:bg-pink-600 hover:text-white"
+              className="next-button rounded-full border border-pink-600 p-4 text-pink-600 hover:bg-pink-600 hover:text-white"
             >
               <svg
-                class="h-5 w-5"
+                className="h-5 w-5"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"

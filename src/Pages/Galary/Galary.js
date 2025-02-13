@@ -22,26 +22,26 @@ export const Galary = () => {
           </h2>
           <div className="divider mb-20 h-1 w-1/12  bg-primary"></div>
 
-          <div class="ImageContainer">
-  <div class="ImageCard">
+          <div className="ImageContainer">
+  <div className="ImageCard">
     <img src=" https://i.ibb.co/KrdDP2D/1.jpg"/>
-    <div class="card__head">Wireless headphones</div>
+    <div className="card__head">Wireless headphones</div>
   </div>
-  <div class="ImageCard">
+  <div className="ImageCard">
     <img src="https://i.ibb.co/XWKZV4w/2.jpg"/>
-    <div class="card__head">Noise-canceling headphone</div>
+    <div className="card__head">Noise-canceling headphone</div>
   </div>
-  <div class="ImageCard">
+  <div className="ImageCard">
     <img src="https://i.ibb.co/VxxNzZ1/3.jpg"/>
-    <div class="card__head">Over-ear headphones</div>
+    <div className="card__head">Over-ear headphones</div>
   </div>
-  <div class="ImageCard">
+  <div className="ImageCard">
     <img src="https://i.ibb.co/MpjmPwp/4.jpg"/>
-    <div class="card__head">In-ear headphone</div>
+    <div className="card__head">In-ear headphone</div>
   </div>
-  <div class="ImageCard">
+  <div className="ImageCard">
     <img src="https://i.ibb.co/NtWQ2xn/yogendra-singh-fr6-Sj-LC7o1-Y-unsplash.jpg"/>
-    <div class="card__head">On-ear headphones</div>
+    <div className="card__head">On-ear headphones</div>
   </div>
 </div>
         </section>

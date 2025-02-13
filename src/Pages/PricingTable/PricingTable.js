@@ -4,60 +4,60 @@ export const PricingTable = () => {
   return (
     // <!-- ====== Pricing Section Start -->
     <section
-      class="container bg-[#e646f513] relative z-20 overflow-hidden mx-auto max-w-screen-2xl px-4 py-20 sm:px-6 lg:px-16"
+      className="container bg-[#e646f513] relative z-20 overflow-hidden mx-auto max-w-screen-2xl px-4 py-20 sm:px-6 lg:px-16"
     >
-      <div class="container mx-auto">
-        <div class="-mx-4 flex flex-wrap">
-          <div class="w-full px-4">
-            <div class="mx-auto mb-[60px] max-w-[510px] text-center lg:mb-20">
+      <div className="container mx-auto">
+        <div className="-mx-4 flex flex-wrap">
+          <div className="w-full px-4">
+            <div className="mx-auto mb-[60px] max-w-[510px] text-center lg:mb-20">
               <h2
-                class="text-dark mb-4 text-3xl font-bold sm:text-4xl md:text-[40px]"
+                className="text-dark mb-4 text-3xl font-bold sm:text-4xl md:text-[40px]"
               >
                 Our Pricing Plan
               </h2>
               <div className="divider mx-auto  h-1 w-1/12  bg-secondary"></div>
-              <p class="text-body-color text-base">
+              <p className="text-body-color text-base">
               Affordable vendor pricing: Basic, Standard, Premium packages tailored to suit your needs. Unlock the best value for your business.
               </p>
             </div>
           </div>
         </div>
-        <div class="-mx-4 flex flex-wrap justify-center">
+        <div className="-mx-4 flex flex-wrap justify-center">
 
-          <div class="w-full px-4 md:w-1/2 lg:w-1/3 ">
+          <div className="w-full px-4 md:w-1/2 lg:w-1/3 ">
             <div
-              class="border-primary shadow-pricing relative z-10 mb-10 overflow-hidden rounded-xl border border-opacity-20 bg-white py-10 px-8 sm:p-12 lg:py-10 lg:px-6 xl:p-12 hover:shadow-2xl transition-all duration-500 
+              className="border-primary shadow-pricing relative z-10 mb-10 overflow-hidden rounded-xl border border-opacity-20 bg-white py-10 px-8 sm:p-12 lg:py-10 lg:px-6 xl:p-12 hover:shadow-2xl transition-all duration-500 
               ease-out"
             >
-              <span class="text-primary mb-4 block text-lg font-semibold">
+              <span className="text-primary mb-4 block text-lg font-semibold">
                 Personal
               </span>
-              <h2 class="text-dark mb-5 text-[42px] font-bold">
+              <h2 className="text-dark mb-5 text-[42px] font-bold">
                 $59
-                <span class="text-body-color text-base font-medium"> / year </span>
+                <span className="text-body-color text-base font-medium"> / year </span>
               </h2>
               <p
-                class="text-body-color mb-8 border-t border-b border-[#F2F2F2] pt-5 pb-5 text-base"
+                className="text-body-color mb-8 border-t border-b border-[#F2F2F2] pt-5 pb-5 text-base"
               >
                Essential features for starting vendors
               </p>
-              <div class="mb-7">
-                <p class="text-body-color mb-1 text-base leading-loose">Basic Listing</p>
-                <p class="text-body-color mb-1 text-base leading-loose">
+              <div className="mb-7">
+                <p className="text-body-color mb-1 text-base leading-loose">Basic Listing</p>
+                <p className="text-body-color mb-1 text-base leading-loose">
                 Product Images
                 </p>
-                <p class="text-body-color mb-1 text-base leading-loose">
+                <p className="text-body-color mb-1 text-base leading-loose">
                 Order Management
                 </p>
               </div>
               <a 
                 href="/dashboard"
-                class="text-primary hover:bg-primary hover:border-primary block w-full rounded-md border border-[#D4DEFF] bg-transparent p-4 text-center text-base font-semibold transition hover:text-white"
+                className="text-primary hover:bg-primary hover:border-primary block w-full rounded-md border border-[#D4DEFF] bg-transparent p-4 text-center text-base font-semibold transition hover:text-white"
               >
                 Choose Personal
               </a>
               <div>
-                <span class="absolute right-0 top-7 z-[-1]">
+                <span className="absolute right-0 top-7 z-[-1]">
                   <svg
                     width="77"
                     height="172"
@@ -81,7 +81,7 @@ export const PricingTable = () => {
                     </defs>
                   </svg>
                 </span>
-                <span class="absolute right-4 top-4 z-[-1]">
+                <span className="absolute right-4 top-4 z-[-1]">
                   <svg
                     width="41"
                     height="89"
@@ -318,40 +318,40 @@ export const PricingTable = () => {
               </div>
             </div>
           </div>
-          <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+          <div className="w-full px-4 md:w-1/2 lg:w-1/3">
             <div
-              class="border-primary shadow-pricing relative z-10 mb-10 overflow-hidden rounded-xl border border-opacity-20 bg-white py-10 px-8 sm:p-12 lg:py-10 lg:px-6 xl:p-12 hover:shadow-2xl transition-all duration-500 
+              className="border-primary shadow-pricing relative z-10 mb-10 overflow-hidden rounded-xl border border-opacity-20 bg-white py-10 px-8 sm:p-12 lg:py-10 lg:px-6 xl:p-12 hover:shadow-2xl transition-all duration-500 
               ease-out"
             >
-              <span class="text-primary mb-4 block text-lg font-semibold">
+              <span className="text-primary mb-4 block text-lg font-semibold">
                 Business
               </span>
-              <h2 class="text-dark mb-5 text-[42px] font-bold">
+              <h2 className="text-dark mb-5 text-[42px] font-bold">
                 $199
-                <span class="text-body-color text-base font-medium"> / year </span>
+                <span className="text-body-color text-base font-medium"> / year </span>
               </h2>
               <p
-                class="text-body-color  mb-8 border-t border-b border-[#F2F2F2] pt-5 pb-5 text-base"
+                className="text-body-color  mb-8 border-t border-b border-[#F2F2F2] pt-5 pb-5 text-base"
               >
                 Enhanced Visibility, Advanced Tools
               </p>
-              <div class="mb-7">
-                <p class="text-body-color mb-1 text-base leading-loose">Enhanced Product Promotion</p>
-                <p class="text-body-color mb-1 text-base leading-loose">
+              <div className="mb-7">
+                <p className="text-body-color mb-1 text-base leading-loose">Enhanced Product Promotion</p>
+                <p className="text-body-color mb-1 text-base leading-loose">
                 Advanced Analytics and Reporting
                 </p>
-                <p class="text-body-color mb-1 text-base leading-loose">
+                <p className="text-body-color mb-1 text-base leading-loose">
                 Dedicated Account Manager
                 </p>
               </div>
               <a
                 href="/dashboard"
-                class="bg-primary border-primary block w-full rounded-md border p-4 text-center text-base font-semibold text-white transition hover:bg-opacity-90"
+                className="bg-primary border-primary block w-full rounded-md border p-4 text-center text-base font-semibold text-white transition hover:bg-opacity-90"
               >
                 Choose Business
               </a>
               <div>
-                <span class="absolute right-0 top-7 z-[-1]">
+                <span className="absolute right-0 top-7 z-[-1]">
                   <svg
                     width="77"
                     height="172"
@@ -375,7 +375,7 @@ export const PricingTable = () => {
                     </defs>
                   </svg>
                 </span>
-                <span class="absolute right-4 top-4 z-[-1]">
+                <span className="absolute right-4 top-4 z-[-1]">
                   <svg
                     width="41"
                     height="89"
@@ -612,42 +612,42 @@ export const PricingTable = () => {
               </div>
             </div>
           </div>
-          <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+          <div className="w-full px-4 md:w-1/2 lg:w-1/3">
             <div
-              class="border-primary shadow-pricing relative z-10 mb-10 overflow-hidden rounded-xl border border-opacity-20 bg-white py-10 px-8 sm:p-12 lg:py-10 lg:px-6 xl:p-12 hover:shadow-2xl transition-all duration-500 
+              className="border-primary shadow-pricing relative z-10 mb-10 overflow-hidden rounded-xl border border-opacity-20 bg-white py-10 px-8 sm:p-12 lg:py-10 lg:px-6 xl:p-12 hover:shadow-2xl transition-all duration-500 
               ease-out"
             >
-              <span class="text-primary mb-4 block text-lg font-semibold">
+              <span className="text-primary mb-4 block text-lg font-semibold">
                 Professional
               </span>
-              <h2 class="text-dark mb-5 text-[42px] font-bold">
+              <h2 className="text-dark mb-5 text-[42px] font-bold">
                 $256
-                <span class="text-body-color text-base font-medium"> / year </span>
+                <span className="text-body-color text-base font-medium"> / year </span>
               </h2>
               <p
-                class="text-body-color  mb-8 border-t border-b border-[#F2F2F2] pt-5 pb-5 text-base"
+                className="text-body-color  mb-8 border-t border-b border-[#F2F2F2] pt-5 pb-5 text-base"
               >
                 Unlimited Listings, Priority Support
               </p>
-              <div class="mb-7">
-                <p class="text-body-color mb-1 text-base leading-loose">
+              <div className="mb-7">
+                <p className="text-body-color mb-1 text-base leading-loose">
                 Unlimited Listings
                 </p>
-                <p class="text-body-color mb-1 text-base leading-loose">
+                <p className="text-body-color mb-1 text-base leading-loose">
                   Priority Support
                 </p>
-                <p class="text-body-color mb-1 text-base leading-loose">
+                <p className="text-body-color mb-1 text-base leading-loose">
                   Advanced Marketing Tools
                 </p>
               </div>
               <a
                 href="/dashboard"
-                class="text-primary hover:bg-primary hover:border-primary block w-full rounded-md border border-[#D4DEFF] bg-transparent p-4 text-center text-base font-semibold transition hover:text-white"
+                className="text-primary hover:bg-primary hover:border-primary block w-full rounded-md border border-[#D4DEFF] bg-transparent p-4 text-center text-base font-semibold transition hover:text-white"
               >
                 Choose Professional
               </a>
               <div>
-                <span class="absolute right-0 top-7 z-[-1]">
+                <span className="absolute right-0 top-7 z-[-1]">
                   <svg
                     width="77"
                     height="172"
@@ -671,7 +671,7 @@ export const PricingTable = () => {
                     </defs>
                   </svg>
                 </span>
-                <span class="absolute right-4 top-4 z-[-1]">
+                <span className="absolute right-4 top-4 z-[-1]">
                   <svg
                     width="41"
                     height="89"
