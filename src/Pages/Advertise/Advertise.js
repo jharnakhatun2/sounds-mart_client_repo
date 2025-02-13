@@ -121,6 +121,7 @@ const Advertise = () => {
                           <img
                             src="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
                             className="w-6 h-6 rounded-full"
+                            alt="image"
                           />
                         </div>
                       </div>

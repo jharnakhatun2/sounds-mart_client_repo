@@ -2,7 +2,7 @@ import React from "react";
 
 export const Features = () => {
   return (
-    <div className="bg-blend-multiply bg-fixed" style={{backgroundImage: "url(" + "https://i.ibb.co/bJ3GJng/sounds.jpg" + ")",
+    <div className="bg-blend-multiply bg-fixed" style={{backgroundImage: `url("https://i.ibb.co/bJ3GJng/sounds.jpg")`,
     backgroundPosition: 'center',
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat'}}>

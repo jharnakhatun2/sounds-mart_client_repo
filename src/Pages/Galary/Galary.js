@@ -24,23 +24,23 @@ export const Galary = () => {
 
           <div className="ImageContainer">
   <div className="ImageCard">
-    <img src=" https://i.ibb.co/KrdDP2D/1.jpg"/>
+    <img src=" https://i.ibb.co/KrdDP2D/1.jpg" alt="wireless headphones"/>
     <div className="card__head">Wireless headphones</div>
   </div>
   <div className="ImageCard">
-    <img src="https://i.ibb.co/XWKZV4w/2.jpg"/>
+    <img src="https://i.ibb.co/XWKZV4w/2.jpg" alt="image"/>
     <div className="card__head">Noise-canceling headphone</div>
   </div>
   <div className="ImageCard">
-    <img src="https://i.ibb.co/VxxNzZ1/3.jpg"/>
+    <img src="https://i.ibb.co/VxxNzZ1/3.jpg" alt="image"/>
     <div className="card__head">Over-ear headphones</div>
   </div>
   <div className="ImageCard">
-    <img src="https://i.ibb.co/MpjmPwp/4.jpg"/>
+    <img src="https://i.ibb.co/MpjmPwp/4.jpg" alt="image"/>
     <div className="card__head">In-ear headphone</div>
   </div>
   <div className="ImageCard">
-    <img src="https://i.ibb.co/NtWQ2xn/yogendra-singh-fr6-Sj-LC7o1-Y-unsplash.jpg"/>
+    <img src="https://i.ibb.co/NtWQ2xn/yogendra-singh-fr6-Sj-LC7o1-Y-unsplash.jpg" alt="image"/>
     <div className="card__head">On-ear headphones</div>
   </div>
 </div>

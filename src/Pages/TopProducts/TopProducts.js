@@ -20,7 +20,7 @@ export const TopProducts = () => {
 
   const topFourProducts = headphone.slice(0, 4);
   return (
-    <div className="bg-blend-multiply bg-fixed" style={{backgroundImage: "url(" + "https://i.ibb.co/N1rpdCp/newsletter.png" + ")",
+    <div className="bg-blend-multiply bg-fixed" style={{backgroundImage: `url("https://i.ibb.co/N1rpdCp/newsletter.png")`,
     backgroundPosition: 'center',
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat'}}>
@@ -43,7 +43,7 @@ export const TopProducts = () => {
                     <img
                       className="rounded-t-lg p-8"
                       src={imageUrl}
-                      alt="product image"
+                      alt="product"
                     />
                   </a>
                   <div className="px-5 py-5 bg-gray-100 rounded-b-lg">
