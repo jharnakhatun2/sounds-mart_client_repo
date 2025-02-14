@@ -80,7 +80,7 @@ export const VideoHeadphone = () => {
           </div>
         </div>
         <div className="relative lg:w-1/2">
-          <video autoplay="{true}"
+          <video autoPlay="{true}"
     loop
     muted src="/HeadPhoneBranding.mp4" controls className="object-cover w-full h-56 rounded shadow-lg sm:h-96"/>
         </div>
